@@ -8,6 +8,7 @@ import { Target, Compass, Heart, Mail, Phone, ArrowRight } from 'lucide-react';
 import { AppRoute } from '../types';
 import { COMPANY_INFO } from '../data';
 import SEO from '../components/SEO';
+import consultingWorkspace from '../assets/images/consulting_workspace_1784430738464.jpg';
 
 interface AboutProps {
   onNavigate: (path: AppRoute) => void;
@@ -68,7 +69,7 @@ export default function About({ onNavigate }: AboutProps) {
               <div className="absolute -inset-1.5 bg-gradient-to-r from-indigo-500/30 to-blue-500/30 rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-500"></div>
               <div className="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 shadow-xl shadow-indigo-500/5">
                 <img 
-                  src="/src/assets/images/consulting_workspace_1784430738464.jpg" 
+                  src={consultingWorkspace} 
                   alt="Modern business consulting workspace and planning materials" 
                   className="w-full aspect-[4/3] object-cover object-center brightness-[0.85] contrast-[1.05] group-hover:scale-[1.03] transition-transform duration-700 ease-out"
                   referrerPolicy="no-referrer"
